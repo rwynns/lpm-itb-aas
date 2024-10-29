@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg transparent-navbar">
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand mx-3" href="#">
             <img src="img/logo.png" width="70" alt="">

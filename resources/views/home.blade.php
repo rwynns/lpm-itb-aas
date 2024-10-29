@@ -10,9 +10,12 @@
         </div>
     </section>
     <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn rounded-0 text-light">Email</button>
+        {{-- <button type="button" class="btn rounded-0 text-light">Email</button>
         <button type="button" class="btn rounded-0 text-light">Lokasi</button>
-        <button type="button" class="btn rounded-0 text-light">Telepon</button>
+        <button type="button" class="btn rounded-0 text-light">Telepon</button> --}}
+        <button>EMAIL</button>
+        <button>LOKASI</button>
+        <button>TELEPON</button>
     </div>
     <section id="About" class="py-4" style="background-color: #D9D9D9">
         <div class="img-group d-flex justify-content-between">
@@ -21,7 +24,9 @@
             <img src="img/foto-dummy.png" class="rounded" alt="...">
         </div>
         <div class="about-desc text-center my-5">
-            <h1>PROFIL UPM</h1>
+            <div class="section-title">
+                <h2>PROFIL UPM</h2>
+            </div>
             <div class="rounded-div">
                 <p>Unit Pengelola Program (UPM) di Institut Teknologi dan Bisnis AAS Indonesia adalah lembaga yang
                     bertanggung
@@ -36,40 +41,89 @@
         </div>
     </section>
     <section id="activity" class="py-4">
-        <div class="d-flex justify-content-between">
-            <div class="left-column" style="width: 48%;">
-                <!-- Content for the left column goes here -->
-            </div>
-            <div class="right-column d-flex justify-content-end" style="width: 48%;">
-                <button type="button" class="btn btn-success">Success</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-title">
+                        <h2>AGENDA</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center">
+                    <div class="section-title">
+                        <h2>SERTIFIKAT AKREDITASI PROGRAM STUDI</h2>
+                    </div>
+                    <button type="button" class="btn btn-success mt-3"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-download mx-2"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+                        </svg>Unduh SK Akreditasi</button>
+                </div>
             </div>
         </div>
     </section>
+
     <section class="berita-kegiatan my-5">
-        <h1 class="text-center mb-4">BERITA DAN KEGIATAN</h1>
-        <div class="d-flex justify-content-center">
-            <div class="card mx-2" style="width: 28rem;">
-                <img src="img/berita.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Judul 2</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque similique dolor
-                        commodi quia et id ipsa dolorum ipsum illum obcaecati quod praesentium officiis, accusantium omnis
-                        voluptatibus asperiores. Facilis molestias voluptatibus, tempore, perferendis adipisci quos quod
-                        dicta culpa eaque dolore repellat voluptate porro impedit alias. Error nihil saepe dolores! Rerum,
-                        tempora.</p>
-                    <a href="#" class="btn btn-primary">Baca Selanjutnya</a>
+        <div class="section-title">
+            <h2>BERITA DAN KEGIATAN</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/berita.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Judul 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque similique
+                                dolor
+                                commodi quia et id ipsa dolorum ipsum illum obcaecati quod praesentium officiis, accusantium
+                                omnis
+                                voluptatibus asperiores. Facilis molestias voluptatibus, tempore, perferendis adipisci quos
+                                quod
+                                dicta culpa eaque dolore repellat voluptate porro impedit alias. Error nihil saepe dolores!
+                                Rerum,
+                                tempora.</p>
+                            <a href="#" class="btn btn-primary">Baca Selanjutnya</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card mx-2" style="width: 28rem;">
-                <img src="img/berita.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Judul 1</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed, ducimus
-                        qui tempore a hic cum illo facilis culpa corporis commodi consequuntur exercitationem dolore maxime
-                        officia, possimus quas inventore non itaque vero aspernatur harum quis deleniti. Nisi provident
-                        deleniti, consectetur earum mollitia maxime consequatur laborum iure porro quis? Ipsa, reiciendis.
-                    </p>
-                    <a href="#" class="btn btn-primary">Baca selanjutnya</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/berita.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Judul 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed,
+                                ducimus
+                                commodi quia et id ipsa dolorum ipsum illum obcaecati quod praesentium officiis, accusantium
+                                omnis
+                                voluptatibus asperiores. Facilis molestias voluptatibus, tempore, perferendis adipisci quos
+                                quod
+                                dicta culpa eaque dolore repellat voluptate porro impedit alias. Error nihil saepe dolores!
+                                Rerum,
+                                tempora.</p>
+                            <a href="#" class="btn btn-primary">Baca Selanjutnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/berita.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Judul 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed,
+                                ducimus
+                                commodi quia et id ipsa dolorum ipsum illum obcaecati quod praesentium officiis, accusantium
+                                omnis
+                                voluptatibus asperiores. Facilis molestias voluptatibus, tempore, perferendis adipisci quos
+                                quod
+                                dicta culpa eaque dolore repellat voluptate porro impedit alias. Error nihil saepe dolores!
+                                Rerum,
+                                tempora.</p>
+                            <a href="#" class="btn btn-primary">Baca Selanjutnya</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
