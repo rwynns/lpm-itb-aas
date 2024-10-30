@@ -15,10 +15,16 @@
                     <a class="nav-link active" aria-current="page" href="#">BERANDA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROFIL</a>
+                    <a class="nav-link" href="/profile">PROFIL</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">AKREDITASI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LAYANAN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">UPM</a>
                 </li>
             </ul>
         </div>

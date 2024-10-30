@@ -10,9 +10,6 @@
         </div>
     </section>
     <div class="btn-group" role="group" aria-label="Basic example">
-        {{-- <button type="button" class="btn rounded-0 text-light">Email</button>
-        <button type="button" class="btn rounded-0 text-light">Lokasi</button>
-        <button type="button" class="btn rounded-0 text-light">Telepon</button> --}}
         <button>EMAIL</button>
         <button>LOKASI</button>
         <button>TELEPON</button>
