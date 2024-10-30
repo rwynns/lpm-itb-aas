@@ -244,3 +244,28 @@ section {
         height: auto; 
     }
 }
+
+/* AKREDITASI */
+#akreditasi .judul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #245181;
+    margin-top: 110px;
+}
+
+#akreditasi .judul h1{
+    color: #FF8E01;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: medium;
+    position: relative;
+}
+
+#akreditasi .table {
+    margin-top: 20px;
+}
+
+#akreditasi .table th {
+    background-color: #FF8E01;
+    color: black;
+}

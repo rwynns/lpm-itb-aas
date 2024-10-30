@@ -6,10 +6,10 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/nyobain', function () {
-    return view('coba');
-});
-
 Route::get('/profile', function () {
     return view('profile');
+});
+
+Route::get('/akreditasi', function () {
+    return view('akreditasi');
 });

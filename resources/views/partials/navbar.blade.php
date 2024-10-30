@@ -18,7 +18,7 @@
                     <a class="nav-link" href="/profile">PROFIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">AKREDITASI</a>
+                    <a class="nav-link" href="/akreditasi">AKREDITASI</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">LAYANAN</a>
