@@ -33,6 +33,31 @@
     box-shadow: 0 4px 10px rgba(81, 76, 76, 0.8);
 }
 
+.navbar-nav {
+    margin-right: 2rem;
+}
+
+.navbar .nav-item {
+    margin-right: 20px;
+}
+
+.navbar .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: blue;
+}
+
+.navbar .dropdown-menu {
+    max-width: 20px;
+}
+
+.navbar .dropdown-item {
+    text-wrap: pretty;
+}
+
 .btn-group {
     width: 100%;
 }
@@ -268,4 +293,132 @@ section {
 #akreditasi .table th {
     background-color: #FF8E01;
     color: black;
+}
+
+
+/* Survey Kepuasan */
+#survey-kepuasan .judul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #245181;
+    margin-top: 110px;
+}
+
+#survey-kepuasan .judul h1{
+    color: #FF8E01;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: medium;
+    position: relative;
+}
+
+#survey-kepuasan .container {
+    background-color: #ffffff;
+}
+
+#survey-kepuasan p {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+/* Jadwal Audit */
+
+#jadwal-audit .judul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #245181;
+    margin-top: 110px;
+}
+
+#jadwal-audit .judul h1{
+    color: #FF8E01;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: medium;
+    position: relative;
+}
+
+#jadwal-audit .table {
+    margin-top: 20px;
+    box-shadow: 0px 2px 10px rgba(81, 76, 76, 0.8);
+}
+
+#jadwal-audit .table th {
+    background-color: gray;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+#jadwal-audit .table-custom th, .table-custom td {
+    width: 100px;
+}
+
+
+/* Daftar Audit */
+#daftar-audit .judul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #245181;
+    margin-top: 110px;
+}
+
+#daftar-audit .judul h1{
+    color: #FF8E01;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: medium;
+    position: relative;
+}
+
+#daftar-audit .table {
+    margin-top: 20px;
+    box-shadow: 0px 2px 10px rgba(81, 76, 76, 0.8);
+}
+
+#daftar-audit .table th {
+    background-color: gray;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+#daftar-audit .table-custom th, .table-custom td {
+    width: 100px;
+}
+
+
+/* UPM */
+#upm .judul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #245181;
+    margin-top: 110px;
+}
+
+#upm .judul h1{
+    color: #FF8E01;
+    margin-left: 50px;
+    font-size: 3rem;
+    font-weight: medium;
+    position: relative;
+}
+
+#upm .container h1{
+    font-size: 2rem;
+}
+
+#upm .container p{
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+#upm .container li{
+    font-size: 1.2rem;
+}
+
+#upm .intro-text {
+    margin-bottom: 0; /* Menghilangkan margin bawah dari <p> */
+}
+
+#upm .intro-list {
+    margin-top: 0; /* Menghilangkan margin atas dari <ol> */
 }

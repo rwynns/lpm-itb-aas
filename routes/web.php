@@ -13,3 +13,19 @@ Route::get('/profile', function () {
 Route::get('/akreditasi', function () {
     return view('akreditasi');
 });
+
+Route::get('/layanan', function () {
+    return view('layanan');
+});
+
+Route::get('/jadwal-audit', function () {
+    return view('jadwal-audit');
+});
+
+Route::get('/daftar-audit', function () {
+    return view('daftar-audit');
+});
+
+Route::get('/upm', function () {
+    return view('upm');
+});
