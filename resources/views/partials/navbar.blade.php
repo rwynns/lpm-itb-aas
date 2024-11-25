@@ -12,20 +12,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">BERANDA</a>
+                    <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">BERANDA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile">PROFIL</a>
+                    <a class="nav-link {{ Request::is('profile') ? 'active' : '' }}" href="/profile">PROFIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/akreditasi">AKREDITASI</a>
+                    <a class="nav-link {{ Request::is('akreditasi') ? 'active' : '' }}"
+                        href="/akreditasi">AKREDITASI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/layanan">LAYANAN</a>
+                    <a class="nav-link {{ Request::is('layanan') ? 'active' : '' }}" href="/layanan">LAYANAN</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle {{ Request::is('jadwal-audit') || Request::is('daftar-audit') ? 'active' : '' }}"
+                        href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         AUDIT
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -37,6 +39,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/upm">UPM</a>
                 </li>
+                @auth
+                    <li class="nav-item">
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <button type="submit" class="nav-link">Logout</button>
+                        </form>
+                    </li>
+                @endauth
+
             </ul>
         </div>
     </div>

@@ -46,6 +46,11 @@
     font-weight: 500;
 }
 
+.navbar .nav-link.active {
+    color: blue;
+    font-weight: bold;
+}
+
 .navbar .nav-link:hover {
     color: blue;
 }
@@ -421,4 +426,44 @@ section {
 
 #upm .intro-list {
     margin-top: 0; /* Menghilangkan margin atas dari <ol> */
+}
+
+/* Login */
+.form-signin{
+    padding-top: 110px;
+}
+
+.form-signin input{
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+  
+.form-registration {
+    padding-top: 110px;
+}
+
+.form-registration input {
+    border-radius: 0;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+/* Berita */
+#berita .judul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #245181;
+    margin-top: 110px;
+}
+
+#berita .judul h1 {
+    color: #FF8E01;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: medium;
+    position: relative;
+}
+
+#berita p{
+    font-size: 1.2rem;
 }

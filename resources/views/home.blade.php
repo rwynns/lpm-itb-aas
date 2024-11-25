@@ -68,60 +68,19 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/berita.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Judul 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque similique
-                                dolor
-                                commodi quia et id ipsa dolorum ipsum illum obcaecati quod praesentium officiis, accusantium
-                                omnis
-                                voluptatibus asperiores. Facilis molestias voluptatibus, tempore, perferendis adipisci quos
-                                quod
-                                dicta culpa eaque dolore repellat voluptate porro impedit alias. Error nihil saepe dolores!
-                                Rerum,
-                                tempora.</p>
-                            <a href="#" class="btn btn-primary">Baca Selanjutnya</a>
+                @foreach ($postingans as $post)
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top"
+                                alt="{{ $post->judul }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $post->title }}</h5>
+                                <p class="card-text">{{ $post->excerpt }}</p>
+                                <a href="/berita/{{ $post->slug }}" class="btn btn-primary">Baca Selanjutnya</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/berita.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Judul 2</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed,
-                                ducimus
-                                commodi quia et id ipsa dolorum ipsum illum obcaecati quod praesentium officiis, accusantium
-                                omnis
-                                voluptatibus asperiores. Facilis molestias voluptatibus, tempore, perferendis adipisci quos
-                                quod
-                                dicta culpa eaque dolore repellat voluptate porro impedit alias. Error nihil saepe dolores!
-                                Rerum,
-                                tempora.</p>
-                            <a href="#" class="btn btn-primary">Baca Selanjutnya</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/berita.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Judul 3</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed,
-                                ducimus
-                                commodi quia et id ipsa dolorum ipsum illum obcaecati quod praesentium officiis, accusantium
-                                omnis
-                                voluptatibus asperiores. Facilis molestias voluptatibus, tempore, perferendis adipisci quos
-                                quod
-                                dicta culpa eaque dolore repellat voluptate porro impedit alias. Error nihil saepe dolores!
-                                Rerum,
-                                tempora.</p>
-                            <a href="#" class="btn btn-primary">Baca Selanjutnya</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
