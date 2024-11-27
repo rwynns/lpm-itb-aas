@@ -32,76 +32,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Akreditasi Unggul</td>
-                            <td>1</td>
-                            <td>1,37%</td>
-                            <td>10</td>
-                            <td>13,70%</td>
-                            <td>32</td>
-                            <td>43,84%</td>
-                            <td>5</td>
-                            <td>6,85%</td>
-                            <td>48</td>
-                            <td>65,75%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Terakreditasi A</td>
-                            <td>1</td>
-                            <td>1,37%</td>
-                            <td>10</td>
-                            <td>13,70%</td>
-                            <td>32</td>
-                            <td>43,84%</td>
-                            <td>5</td>
-                            <td>6,85%</td>
-                            <td>48</td>
-                            <td>65,75%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Akreditasi Baik Sekali</td>
-                            <td>1</td>
-                            <td>1,37%</td>
-                            <td>10</td>
-                            <td>13,70%</td>
-                            <td>32</td>
-                            <td>43,84%</td>
-                            <td>5</td>
-                            <td>6,85%</td>
-                            <td>48</td>
-                            <td>65,75%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Akreditasi Baik Sekali</td>
-                            <td>1</td>
-                            <td>1,37%</td>
-                            <td>10</td>
-                            <td>13,70%</td>
-                            <td>32</td>
-                            <td>43,84%</td>
-                            <td>5</td>
-                            <td>6,85%</td>
-                            <td>48</td>
-                            <td>65,75%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Akreditasi Baik Sekali</td>
-                            <td>1</td>
-                            <td>1,37%</td>
-                            <td>10</td>
-                            <td>13,70%</td>
-                            <td>32</td>
-                            <td>43,84%</td>
-                            <td>5</td>
-                            <td>6,85%</td>
-                            <td>48</td>
-                            <td>65,75%</td>
-                        </tr>
+                        @foreach ($akreditasi as $akreditasi)
+                            <tr class="text-center" style="font-size: 1rem">
+                                <td>{{ $loop->iteration }}</td>
+                                <td>{{ $akreditasi->status_peringkat }}</td>
+                                <td>{{ $akreditasi->doktor_jumlah }}</td>
+                                <td>{{ $akreditasi->doktor_persentase }}</td>
+                                <td>{{ $akreditasi->magister_jumlah }}</td>
+                                <td>{{ $akreditasi->magister_persentase }}</td>
+                                <td>{{ $akreditasi->sarjana_jumlah }}</td>
+                                <td>{{ $akreditasi->sarjana_persentase }}</td>
+                                <td>{{ $akreditasi->profesi_jumlah }}</td>
+                                <td>{{ $akreditasi->profesi_persentase }}</td>
+                                <td>{{ $akreditasi->total_jumlah }}</td>
+                                <td>{{ $akreditasi->total_persentase }}</td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

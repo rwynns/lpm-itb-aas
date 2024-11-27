@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\AkreditasiController;
 use App\Http\Controllers\DashboardPostController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PostinganController;
+use App\Http\Controllers\RegisterController;
+use App\Models\Akreditasi;
+use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+
 
 Route::get('/', [PostinganController::class, 'index']);
 
@@ -15,11 +18,13 @@ Route::get('/', [PostinganController::class, 'index']);
 //     ]);
 // });
 
-Route::get('/akreditasi', function () {
-    return view('akreditasi', [
-        "title" => "Akreditasi"
-    ]);
-});
+// Route::get('/akreditasi', function () {
+//     return view('akreditasi', [
+//         "title" => "Akreditasi"
+//     ]);
+// });
+
+Route::get('/akreditasi', [AkreditasiController::class, 'showPublic']);
 
 Route::get('/layanan', function () {
     return view('layanan', [
@@ -70,3 +75,5 @@ Route::get('/dashboard/postingan/checkSlug', [DashboardPostController::class, 'c
 
 Route::resource('/dashboard/postingan', DashboardPostController::class)->middleware('auth');
 Route::get('/berita/{slug}', [PostinganController::class, 'detail']);
+
+Route::resource('/dashboard/akreditasi', AkreditasiController::class)->middleware('auth');

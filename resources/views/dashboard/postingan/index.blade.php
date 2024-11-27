@@ -32,15 +32,13 @@
                             <a href="/dashboard/postingan/{{ $postingan->id }}" class="btn btn-info"><i
                                     class="bi bi-eye me-2"></i>Lihat Postingan</a>
                             <a href="/dashboard/postingan/{{ $postingan->id }}/edit" class="btn btn-warning"><i
-                                    class="bi bi-pencil-square me-2"></i>Edit
-                                Postingan</a>
+                                    class="bi bi-pencil-square me-2"></i>Edit</a>
                             <form action="/dashboard/postingan/{{ $postingan->id }}" method="POST" class="d-inline">
                                 @method('delete')
                                 @csrf
                                 <button class="btn btn-danger border-0"
                                     onclick="return confirm('Apakah kamu yakin untuk menghapus postingan ini?')"><i
-                                        class="bi bi-x-circle me-2"></i>Hapus
-                                    Postingan</button>
+                                        class="bi bi-x-circle me-2"></i>Hapus</button>
                             </form>
                         </td>
                     </tr>
