@@ -55,6 +55,9 @@
                             <button type="submit" class="nav-link">Logout</button>
                         </form>
                     </li>
+                    <li class="nav-item">
+                        <a href="/dashboard" class="nav-link">Dashboard</a>
+                    </li>
                 @endauth
 
             </ul>
