@@ -11,15 +11,16 @@ class PostinganController extends Controller
     {
         return view('home', [
             "title" => "Home",
-            "postingans" => Postingan::all()
+            "postingans" => Postingan::latest()->take(3)->get()
         ]);
     }
 
     public function detail($slug)
     {
+        $postingan = Postingan::where('slug', $slug)->first();
         return view('berita', [
-            "title" => "Detail",
-            "postingan" => Postingan::where('slug', $slug)->first()
+            "title" => $postingan->title, // Menggunakan judul postingan sebagai title
+            "postingan" => $postingan
         ]);
     }
 }

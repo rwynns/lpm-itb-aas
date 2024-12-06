@@ -12,11 +12,11 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', [PostinganController::class, 'index']);
 
-// Route::get('/profile', function () {
-//     return view('profile', [
-//         "title" => "Profil"
-//     ]);
-// });
+Route::get('/profile', function () {
+    return view('profile', [
+        "title" => "Profil"
+    ]);
+});
 
 // Route::get('/akreditasi', function () {
 //     return view('akreditasi', [
