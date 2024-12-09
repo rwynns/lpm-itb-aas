@@ -10,19 +10,26 @@
                 <table class="table table-custom table-bordered">
                     <thead class="thead-dark">
                         <tr class="text-center">
-                            <th scope="col">SUDAH TERJADWAL</th>
-                            <th scope="col">BELUM TERJADWAL</th>
+                            <th scope="col">No</th>
+                            <th scope="col">Tanggal</th>
+                            <th scope="col">Waktu</th>
+                            <th scope="col">Nama Asesor</th>
+                            <th scope="col">Program Studi Yang Di Audit</th>
+                            <th scope="col">Tempat</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Tes 1</td>
-                            <td>Tes 2</td>
-                        </tr>
-                        <tr>
-                            <td>Contoh 1</td>
-                            <td>Contoh 2</td>
-                        </tr>
+                    <tbody class="text-center">
+                        @foreach ($jadwal_audit as $jadwal)
+                            <tr>
+                                <td>{{ $loop->iteration }}</td>
+                                <td>{{ \Carbon\Carbon::parse($jadwal->tanggal_audit)->locale('id')->translatedFormat('l, d F Y') }}
+                                </td>
+                                <td>{{ \Carbon\Carbon::parse($jadwal->jam_audit)->format('H:i') }}</td>
+                                <td>{{ $jadwal->nama_asesor }}</td>
+                                <td>{{ $jadwal->program_studi }}</td>
+                                <td>{{ $jadwal->tempat }}</td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

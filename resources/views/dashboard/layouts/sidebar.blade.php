@@ -35,6 +35,31 @@
                         Akreditasi
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 {{ Request::is('dashboard/jadwal_audit*') ? 'active' : '' }}"
+                        href="/dashboard/jadwal_audit">
+                        <svg class="bi">
+                            <use xlink:href="#file-earmark" />
+                        </svg>
+                        Jadwal Audit
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="/dashboard/sk-akreditasi">
+                        <svg class="bi">
+                            <use xlink:href="#file-earmark" />
+                        </svg>
+                        SK Akreditasi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="/dashboard/dokumen_kebijakan">
+                        <svg class="bi">
+                            <use xlink:href="#file-earmark" />
+                        </svg>
+                        Dokumen Kebijakan
+                    </a>
+                </li>
             </ul>
 
             <hr class="my-3">
@@ -58,6 +83,7 @@
                             </svg>Logout</button>
                     </form>
                 </li>
+
             </ul>
         </div>
     </div>

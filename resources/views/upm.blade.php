@@ -23,6 +23,8 @@
                     kami.
                     Kami terbuka menerima kritik dan saran dari Bapak/Ibu, yang dapat dikirimkan ke email ljm@aas.ac.id.</p>
                 <p class="mt-5">Terima kasih.</p>
+                <a href="/dokumen-kebijakan"><button type="button" class="btn btn-lg btn-success">Dokumen
+                        Kebijakan</button></a>
             </div>
         </div>
     </section>
